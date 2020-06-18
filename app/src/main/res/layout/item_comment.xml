@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="60dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/imgProfilePic"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="@dimen/_2dp"
+                    tools:src="@mipmap/ic_profile_pic" />
+
+                <TextView
+                    android:id="@+id/txtName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_2dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toStartOf="@+id/txtTime"
+                    android:layout_toLeftOf="@+id/txtTime"
+                    android:layout_toEndOf="@+id/imgProfilePic"
+                    android:layout_toRightOf="@+id/imgProfilePic"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    tools:text="xyyz User" />
+
+                <TextView
+                    android:id="@+id/txtTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="end"
+                    android:drawableStart="@mipmap/ic_time"
+                    android:drawableLeft="@mipmap/ic_time"
+                    android:drawablePadding="2dp"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    tools:text="2 hours ago" />
+
+                <TextView
+                    android:id="@+id/comments"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtName"
+                    android:layout_marginLeft="@dimen/_2dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/imgProfilePic"
+                    android:layout_toRightOf="@+id/imgProfilePic"
+                    tools:text="this comment from user" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_000000" />
+        </LinearLayout>
+
+
+    </FrameLayout>
+</layout>
