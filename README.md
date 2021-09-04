@@ -8,3 +8,15 @@ This is sample application with MVVM Structure with AndroidX
    - Data Binding
 
 Application maintain cache for offline up 100mb
+
+
+## Author
+
+Amit Ranjan  
+Software Engineer  
+<br>
+**Mobile**: +91 9643 595 785  
+**E-mail**: amitranjan2303@gmail.com  
+**Skype**: amitranjan2330  
+**LinkedIn**: https://www.linkedin.com/in/amitranjan5/
+
